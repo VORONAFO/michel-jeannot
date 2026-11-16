@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Candidature de Michel JEANNOT à un stage en énergie renouvelable et génie électrique.">
+<meta property="og:title" content="Candidature Michel JEANNOT">
+<meta property="og:description" content="Candidature de Michel JEANNOT à un stage en énergie renouvelable et génie électrique.">
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Candidature Michel JEANNOT</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+/* Layout : bandeau bleu à grandes courbes et accents vert citron ; tableau « missions du poste / expérience » ; motivation en deux colonnes ; projets illustrés par leurs cartes ; parcours ; compétences par niveau ; contact. */
+:root{
+  --bg:#f3f6fa; --surface:#ffffff; --ink:#0e1d33; --muted:#55657a; --rule:#d6dee9; --accent:#0b5cad; --lime:#a3e000; --soft:#eef6dd; --on-lime:#0b2a6e;
+  --hero-bg:#0a4a94; --hero-bg2:#1277ba; --hero-bg3:#083a78; --hero-fg:#ffffff; --hero-muted:#c3d7ef; --hero-rule:#4d86c6;
+  --display:"Roboto","Helvetica Neue",Arial,sans-serif;
+  --sans:"Source Sans 3","Segoe UI",Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#0a1220; --surface:#111c2e; --ink:#e8eef6; --muted:#9dabbe; --rule:#24344c; --accent:#7cc0ff; --lime:#a8e600; --soft:#18240f; --on-lime:#0b2a6e;
+  --hero-bg:#083a76; --hero-bg2:#0f64a0; --hero-bg3:#062c5c; --hero-fg:#ffffff; --hero-muted:#c3d7ef; --hero-rule:#3f73ad; color-scheme:dark } }
+:root[data-theme="dark"]{
+  --bg:#0a1220; --surface:#111c2e; --ink:#e8eef6; --muted:#9dabbe; --rule:#24344c; --accent:#7cc0ff; --lime:#a8e600; --soft:#18240f; --on-lime:#0b2a6e;
+  --hero-bg:#083a76; --hero-bg2:#0f64a0; --hero-bg3:#062c5c; --hero-fg:#ffffff; --hero-muted:#c3d7ef; --hero-rule:#3f73ad; color-scheme:dark }
+
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.65;word-spacing:.08em}
+h1,h2,h3,h4,p,ul,ol,dl,dd,dt{margin:0}
+ul,ol{padding:0;list-style:none}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:2px solid var(--lime);outline-offset:3px}
+.in{max-width:1080px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.lab{font-family:var(--display);font-weight:700;font-size:.7rem;letter-spacing:.1em;word-spacing:.2em;text-transform:uppercase}
+
+/* Bandeau */
+.hero{color:var(--hero-fg);border-bottom:6px solid var(--lime);
+  background:
+    radial-gradient(circle at 100% -10%, var(--hero-bg2) 0 min(44vw,540px), transparent calc(min(44vw,540px) + 1px)),
+    radial-gradient(circle at -6% 118%, var(--hero-bg3) 0 min(38vw,420px), transparent calc(min(38vw,420px) + 1px)),
+    var(--hero-bg)}
+.hero .in{padding-block:22px 60px;display:flex;flex-direction:column;gap:60px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px 24px;flex-wrap:wrap}
+.top nav{display:flex;flex-wrap:wrap;gap:4px 22px;font-size:.9375rem}
+.top nav a{text-decoration:none;color:var(--hero-fg);padding-block:4px;border-bottom:2px solid transparent}
+.top nav a:hover{border-bottom-color:var(--lime)}
+.pill{display:inline-block;background:var(--lime);color:var(--on-lime);padding:6px 14px}
+.hero-text{display:flex;flex-direction:column;gap:22px}
+h1{font-family:var(--display);font-weight:900;font-size:clamp(2.5rem,8vw,5.25rem);line-height:1.02;word-spacing:.08em}
+h1 span{color:var(--lime)}
+.pitch{font-size:clamp(1.125rem,2.1vw,1.375rem);line-height:1.5;max-width:33em}
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.fact{border:1px solid var(--hero-rule);background:var(--hero-bg3);padding:14px 16px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.fact .lab{color:var(--hero-muted)}
+.fact b{font-family:var(--display);font-weight:700;font-size:1rem;line-height:1.35}
+.fact.go{background:var(--lime);border-color:var(--lime);color:var(--on-lime)}
+.fact.go .lab{color:var(--on-lime)}
+
+/* Sections */
+main{display:flex;flex-direction:column;gap:80px;padding-block:64px 80px}
+.sec{display:flex;flex-direction:column;gap:26px}
+.sec-h{display:flex;align-items:baseline;gap:16px;border-bottom:1px solid var(--rule);padding-bottom:12px}
+h2{font-family:var(--display);font-weight:900;font-size:clamp(1.625rem,3.6vw,2.25rem);line-height:1.2;word-spacing:.06em}
+h2::after{content:"";display:block;width:44px;height:5px;background:var(--lime);margin-top:10px}
+.sec-h .lab{color:var(--muted);margin-left:auto;text-align:right}
+
+/* Missions / expérience */
+.match{border:1px solid var(--rule);overflow:hidden;background:var(--surface)}
+.row{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);border-top:1px solid var(--rule)}
+.row:first-child{border-top:0}
+.row>div{padding:15px 22px;min-width:0}
+.mis{background:var(--soft);font-family:var(--display);font-weight:700;font-size:.9375rem;line-height:1.45;border-left:5px solid var(--lime)}
+.exp{font-size:1rem}
+.exp b{font-weight:600}
+.head .mis,.head .exp{font-family:var(--display);font-weight:700;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--hero-fg);background:var(--hero-bg);padding-block:11px;border-left-color:var(--hero-bg)}
+
+/* Motivation */
+.why{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.why>div{padding:26px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.give{background:var(--hero-bg);color:var(--hero-fg)}
+.give .lab{color:var(--lime)}
+.take{background:var(--surface);border:1px solid var(--rule)}
+.take .lab{color:var(--accent)}
+.why p{font-size:1.125rem;line-height:1.55}
+
+/* Projets */
+.cases{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.case{background:var(--surface);border:1px solid var(--rule);display:flex;flex-direction:column;min-width:0}
+.case.wide{grid-column:span 2;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr)}
+.case-h{padding:24px;display:flex;flex-direction:column;gap:10px}
+.case-h .lab{color:var(--accent)}
+.case-h h3{font-family:var(--display);font-weight:700;font-size:1.1875rem;line-height:1.35;text-wrap:balance}
+.case-h p{font-size:1rem}
+.case-h .by{font-size:.875rem;color:var(--muted);margin-top:auto;padding-top:8px}
+.gal{padding:20px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;background:var(--bg);border-left:1px solid var(--rule);align-content:start}
+.gal.one{grid-template-columns:minmax(0,1fr);border-left:0;border-top:1px solid var(--rule)}
+.map{margin:0;display:flex;flex-direction:column;gap:6px;min-width:0}
+.map-btn{padding:0;border:1px solid var(--rule);overflow:hidden;background:#fff;cursor:zoom-in;aspect-ratio:3/2;display:flex;align-items:center;justify-content:center;max-width:100%}
+.map-btn:hover{border-color:var(--accent)}
+.map-btn img{width:100%;height:100%;object-fit:contain;display:block}
+.map figcaption{font-size:.875rem;line-height:1.4;color:var(--muted)}
+.hint{font-size:.875rem;color:var(--muted)}
+.chainbox{margin-top:auto;gap:12px}
+.chainbox .lab{color:var(--muted)}
+.chain{display:flex;flex-direction:column;gap:0}
+.chain li{background:var(--surface);border:1px solid var(--rule);padding:9px 14px;font-family:var(--display);font-weight:500;font-size:.9375rem;position:relative;margin-bottom:22px}
+.chain li::after{content:"";position:absolute;left:24px;bottom:-23px;width:2px;height:22px;background:var(--accent)}
+.chain li.end{background:var(--lime);border-color:var(--lime);color:var(--on-lime);font-weight:700;margin-bottom:0}
+.chain li.end::after{display:none}
+dialog#zoom{border:0;padding:0;background:var(--surface);color:var(--ink);width:min(1200px,94vw);max-height:92vh;overflow:hidden}
+dialog#zoom[open]{display:flex;flex-direction:column}
+dialog#zoom::backdrop{background:rgba(6,20,44,.82)}
+.zoom-bar{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:12px 16px;border-bottom:1px solid var(--rule);font-weight:600}
+.zoom-img{overflow:auto;background:#fff;min-height:0}
+.zoom-img img{display:block;width:100%;height:auto;max-width:none}
+
+/* Parcours */
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 56px}
+.col{display:flex;flex-direction:column;gap:22px;min-width:0}
+.col>h3{font-family:var(--display);font-weight:700;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.item{display:flex;flex-direction:column;gap:5px;padding-left:18px;border-left:3px solid var(--rule)}
+.item.key{border-left-color:var(--lime)}
+.when{font-family:var(--display);font-weight:500;font-size:.8125rem;color:var(--muted)}
+.item h4{font-family:var(--display);font-size:1.0625rem;font-weight:700;line-height:1.35}
+.item .sub{color:var(--muted);font-size:.9375rem}
+.dash{display:flex;flex-direction:column;gap:5px;font-size:.9688rem}
+.dash li{padding-left:16px;position:relative}
+.dash li::before{content:"";position:absolute;left:0;top:.75em;width:7px;height:2px;background:var(--accent)}
+
+/* Compétences */
+.tiers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.tier{background:var(--surface);border:1px solid var(--rule);padding:22px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.tier.main{border-top:5px solid var(--lime)}
+.tier>.lab{color:var(--accent)}
+.tier dl{display:flex;flex-direction:column;gap:10px}
+.tier dt{font-size:.875rem;color:var(--muted)}
+.tier dd{font-family:var(--display);font-weight:700;font-size:1rem;line-height:1.4}
+.tier dd small{font-family:var(--sans);font-weight:400;font-size:.875rem;color:var(--muted)}
+.team{border-left:5px solid var(--lime);background:var(--soft);padding:16px 22px}
+.team b{font-family:var(--display);font-weight:700}
+
+/* Contact */
+.contact{background:var(--hero-bg);color:var(--hero-fg);border-top:6px solid var(--lime)}
+.contact .in{padding-block:56px 48px;display:flex;flex-direction:column;gap:22px}
+.contact .lab{color:var(--lime)}
+.contact h2::after{display:none}
+.mail{display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px}
+.mail span{font-family:var(--display);font-weight:500;font-size:clamp(1.0625rem,3.4vw,1.75rem);overflow-wrap:anywhere;user-select:all}
+.copy{font:inherit;font-size:.875rem;font-weight:600;padding:9px 18px;border:0;background:var(--lime);color:var(--on-lime);cursor:pointer}
+.copy:hover{filter:brightness(1.08)}
+.lines{display:flex;flex-wrap:wrap;gap:8px 36px;color:var(--hero-muted);border-top:1px solid var(--hero-rule);padding-top:20px}
+.lines b{color:var(--hero-fg);font-weight:600}
+.contact .foot{color:var(--hero-muted)}
+
+@media (max-width:860px){
+  .facts{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .case.wide{display:flex}
+  .gal{border-left:0;border-top:1px solid var(--rule)}
+  .two,.tiers{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:620px){
+  main{gap:56px;padding-block:44px 56px}
+  .hero .in{gap:40px;padding-block:18px 44px}
+  .row{grid-template-columns:minmax(0,1fr)}
+  .head{display:none}
+  .row>div{padding:12px 16px}
+  .why,.cases{grid-template-columns:minmax(0,1fr)}
+  .case.wide{grid-column:auto}
+  .why>div{padding:20px}
+  .sec-h{flex-direction:column;gap:4px}
+  .sec-h .lab{margin-left:0;text-align:left}
+}
+@media (max-width:420px){ .facts{grid-template-columns:minmax(0,1fr)} }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="in">
+    <div class="top">
+      <span class="lab pill">Candidature · stage énergie renouvelable / génie électrique</span>
+      <nav aria-label="Sections">
+        <a href="#missions">Missions</a>
+        <a href="#projets">Projets</a>
+        <a href="#parcours">Parcours</a>
+        <a href="#competences">Compétences</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <div class="hero-text">
+      <h1>Michel<br><span>JEANNOT</span></h1>
+      <p class="pitch">Futur ingénieur en énergies renouvelables (Master 2), je souhaite contribuer à des projets d'énergie et d'infrastructures électriques, du bureau d'études jusqu'au chantier.</p>
+      <div class="facts">
+        <div class="fact"><span class="lab">Énergies renouvelables</span><b>3 projets d'études</b></div>
+        <div class="fact"><span class="lab">Transport et distribution</span><b>Stage JIRAMA, liaison 5 kV</b></div>
+        <div class="fact"><span class="lab">Électromécanique</span><b>Moteur diesel 128 kW</b></div>
+        <div class="fact go"><span class="lab">Disponibilité</span><b>Janvier 2027</b></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="in">
+
+<section class="sec" id="missions">
+  <div class="sec-h"><h2>Missions du poste et expérience</h2><span class="lab">Ce qui a déjà été fait</span></div>
+  <div class="match">
+    <div class="row head"><div class="mis">Mission du poste</div><div class="exp">Expérience correspondante</div></div>
+    <div class="row"><div class="mis">Étude et dimensionnement d'installations solaires, hydroélectriques et éoliennes</div><div class="exp">Sélection de sites PV et éoliens sur 16 districts (Master 2). Potentiel solaire pour une centrale de 1 MW (Master 1). Dimensionnement d'un système de stockage par éolienne (licence).</div></div>
+    <div class="row"><div class="mis">Plans et schémas</div><div class="exp">Dessins techniques du projet de licence sous SolidWorks. Notions d'AutoCAD.</div></div>
+    <div class="row"><div class="mis">Chantier : installation, câblage</div><div class="exp"><b>JIRAMA</b> : préparation de 3 câbles de 30 m pour une liaison transformateur – cellule 5 kV. Montage de l'éolienne du projet de licence.</div></div>
+    <div class="row"><div class="mis">Essais et mise en service</div><div class="exp"><b>JIRAMA</b> : participation à la remise sous tension du centre-ville après l'incendie d'un poste de transformation.</div></div>
+    <div class="row"><div class="mis">Rapports et documents techniques</div><div class="exp">Deux rapports techniques rendus (licence, Master 1), un troisième en cours (Master 2). Cartes produites sous QGIS.</div></div>
+    <div class="row"><div class="mis">Postes électriques et installations industrielles</div><div class="exp"><b>JIRAMA</b> : poste de transformation, séparateurs de fuel, moteur diesel de 128 kW. <b>SOMABAL</b> : diagnostic d'une machine industrielle.</div></div>
+  </div>
+</section>
+
+<section class="sec" id="motivation">
+  <div class="why">
+    <div class="give"><span class="lab">Ce que j'apporte</span><p>Une pratique des études de sites solaires et éoliens, de la donnée brute à la carte de décision, et une première expérience du réseau électrique à la JIRAMA.</p></div>
+    <div class="take"><span class="lab">Ce que je viens apprendre</span><p>Le suivi de chantier, les essais et la mise en service, ainsi que les règles de sécurité, auprès d'ingénieurs et de techniciens expérimentés.</p></div>
+  </div>
+</section>
+
+<section class="sec" id="projets">
+  <div class="sec-h"><h2>Projets</h2><span class="lab">2024 – 2026 · cartes réalisées sous QGIS</span></div>
+  <div class="cases">
+    <article class="case wide">
+      <div class="case-h">
+        <span class="lab">Master 2 · en cours</span>
+        <h3>Réseau interconnecté du Nord de Madagascar, en solaire et en éolien</h3>
+        <p>Étude de faisabilité pour les régions DIANA, SAVA et SOFIA, à l'horizon 2046. Partie cartographique : analyse multicritère (AHP), sélection des sites et tracé des variantes du réseau.</p>
+        <p class="hint">Cliquer sur une carte pour l'agrandir.</p>
+        <span class="by">En binôme · Dr HDR RATSARAMODY Justin, Dr HDR ANDRIANAJAINA Todizara</span>
+      </div>
+      <div class="gal">
+        <figure class="map">
+          <button type="button" class="map-btn" id="map-ressources" data-full="ressources.jpg" data-cap="Ressources solaire et éolienne" aria-label="Agrandir : Ressources solaire et éolienne"><img src="ressources-mini.jpg" alt="Ressources solaire et éolienne" loading="lazy"></button>
+          <figcaption>Ressources solaire et éolienne</figcaption>
+        </figure><figure class="map">
+          <button type="button" class="map-btn" id="map-aptitude-pv" data-full="aptitude-pv.jpg" data-cap="Aptitude photovoltaïque" aria-label="Agrandir : Aptitude photovoltaïque"><img src="aptitude-pv-mini.jpg" alt="Aptitude photovoltaïque" loading="lazy"></button>
+          <figcaption>Aptitude photovoltaïque</figcaption>
+        </figure><figure class="map">
+          <button type="button" class="map-btn" id="map-aptitude-eolien" data-full="aptitude-eolien.jpg" data-cap="Aptitude éolienne" aria-label="Agrandir : Aptitude éolienne"><img src="aptitude-eolien-mini.jpg" alt="Aptitude éolienne" loading="lazy"></button>
+          <figcaption>Aptitude éolienne</figcaption>
+        </figure><figure class="map">
+          <button type="button" class="map-btn" id="map-variante-bouclee" data-full="variante-bouclee.jpg" data-cap="Variante bouclée du réseau" aria-label="Agrandir : Variante bouclée du réseau"><img src="variante-bouclee-mini.jpg" alt="Variante bouclée du réseau" loading="lazy"></button>
+          <figcaption>Variante bouclée du réseau</figcaption>
+        </figure>
+      </div>
+    </article>
+    <article class="case">
+      <div class="case-h">
+        <span class="lab">Master 1 · 2024-2025</span>
+        <h3>Potentiel solaire en DIANA et SAVA, de 2020 à 2024</h3>
+        <p>Cartes d'irradiance à partir de données NASA POWER et seuil P90 pour délimiter les zones fiables pour une centrale de 1 MW.</p>
+        <span class="by">En binôme · Dr RATSARAMODY Justin</span>
+      </div>
+      <div class="gal one">
+        <figure class="map">
+          <button type="button" class="map-btn" id="map-zone-favorable" data-full="zone-favorable.jpg" data-cap="Zone favorable à une centrale de 1 MW" aria-label="Agrandir : Zone favorable à une centrale de 1 MW"><img src="zone-favorable-mini.jpg" alt="Zone favorable à une centrale de 1 MW" loading="lazy"></button>
+          <figcaption>Zone favorable à une centrale de 1 MW</figcaption>
+        </figure>
+      </div>
+    </article>
+    <article class="case">
+      <div class="case-h">
+        <span class="lab">Licence · septembre 2024</span>
+        <h3>Stockage d'énergie par énergie potentielle</h3>
+        <p>Une éolienne Savonius soulève une masse, qui restitue l'énergie en électricité à la descente. Étude, dimensionnement, dessins sous SolidWorks et montage de l'éolienne.</p>
+        <p>Le calcul a montré qu'un prototype complet demandait une masse de l'ordre de 30 tonnes pour moins de 10 m de hauteur.</p>
+        <span class="by">Dr ANDRIANAHARINJAKA Aro-Zo, Pr RAJAONAH Rabevala</span>
+      </div>
+      <div class="gal one chainbox">
+        <span class="lab">Principe</span>
+        <ol class="chain">
+          <li>Vent</li><li>Éolienne Savonius</li><li>Masse soulevée</li><li>Descente freinée</li><li class="end">Électricité</li>
+        </ol>
+      </div>
+    </article>
+  </div>
+</section>
+
+<dialog id="zoom" aria-label="Carte agrandie">
+  <div class="zoom-bar"><span id="zoom-cap"></span><button type="button" id="zoom-close" class="copy">Fermer</button></div>
+  <div class="zoom-img"><img id="zoom-img" src="" alt=""></div>
+</dialog>
+
+<section class="sec" id="parcours">
+  <div class="sec-h"><h2>Parcours</h2><span class="lab">Stages et formation</span></div>
+  <div class="two">
+    <div class="col">
+      <h3>Stages</h3>
+      <div class="item key">
+        <span class="when">nov. – déc. 2024</span>
+        <h4>JIRAMA Toamasina</h4>
+        <span class="sub">Stagiaire</span>
+        <ul class="dash">
+          <li>Remise sous tension du centre-ville après l'incendie d'un poste de transformation.</li>
+          <li>Préparation de 3 câbles de 30 m pour une liaison transformateur – cellule 5 kV.</li>
+          <li>Deux entretiens de séparateur de fuel ; démontage d'un moteur diesel de 128 kW.</li>
+        </ul>
+      </div>
+      <div class="item">
+        <span class="when">janv. – févr. 2024</span>
+        <h4>SOMABAL</h4>
+        <span class="sub">Stagiaire ouvrier · diagnostic d'une dégauchisseuse à l'arrêt depuis une dizaine d'années</span>
+      </div>
+    </div>
+    <div class="col">
+      <h3>Formation</h3>
+      <div class="item key">
+        <span class="when">en cours</span>
+        <h4>Master 2, Hydraulique et Énergétique</h4>
+        <span class="sub">Parcours Énergies nouvelles et renouvelables · ESP Antsiranana</span>
+      </div>
+      <div class="item">
+        <span class="when">1er – 5 juin 2026</span>
+        <h4>Atelier SIG et télédétection, P-GIS Consulting</h4>
+        <span class="sub">Diego-Suarez · attestation de fin de formation</span>
+      </div>
+      <div class="item">
+        <span class="when">2024</span>
+        <h4>Licence, Hydraulique et Énergétique</h4>
+        <span class="sub">ESP Antsiranana</span>
+      </div>
+      <div class="item">
+        <span class="when">2020</span>
+        <h4>Baccalauréat série C</h4>
+        <span class="sub">SJC Toamasina</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="competences">
+  <div class="sec-h"><h2>Compétences</h2><span class="lab">Par niveau</span></div>
+  <div class="tiers">
+    <div class="tier main">
+      <span class="lab">Pratiqué en projet</span>
+      <dl>
+        <div><dt>Cartographie SIG (spécialité)</dt><dd>QGIS</dd></div>
+        <div><dt>Dessin technique</dt><dd>SolidWorks</dd></div>
+        <div><dt>Bureautique</dt><dd>Excel, Word, PowerPoint</dd></div>
+      </dl>
+    </div>
+    <div class="tier">
+      <span class="lab">Notions</span>
+      <dl>
+        <div><dt>Dimensionnement énergétique</dt><dd>RETScreen, HOMER, PVsyst</dd></div>
+        <div><dt>Dessin et plans</dt><dd>AutoCAD</dd></div>
+        <div><dt>Télédétection et programmation</dt><dd>Google Earth Engine, Python</dd></div>
+      </dl>
+    </div>
+    <div class="tier">
+      <span class="lab">Langues</span>
+      <dl>
+        <div><dt>Langue maternelle</dt><dd>Malagasy</dd></div>
+        <div><dt>Avancé</dt><dd>Français</dd></div>
+        <div><dt>Intermédiaire</dt><dd>Anglais</dd></div>
+      </dl>
+    </div>
+  </div>
+  <p class="team"><b>Travail en équipe.</b> Deux projets menés en binôme. Trois ans au bureau d'une association d'une centaine d'étudiants, dont un an comme président.</p>
+</section>
+
+</main>
+
+<footer class="contact" id="contact">
+  <div class="in">
+    <span class="lab">Contact</span>
+    <h2>Disponible pour un entretien</h2>
+    <div class="mail"><span id="mail">jm.jeannotmichel@gmail.com</span><button class="copy" id="copy-mail" type="button">Copier l'adresse</button></div>
+    <div class="lines"><span><b>032 50 110 14</b></span><span><b>034 71 669 65</b></span><span>Antsiranana, Madagascar</span></div>
+    <span class="lab foot">Mis à jour en novembre 2026</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var b=document.getElementById('copy-mail'), m=document.getElementById('mail');
+  b.addEventListener('click',function(){
+    function done(){ b.textContent='Adresse copiée'; setTimeout(function(){b.textContent="Copier l'adresse"},1800); }
+    function fallback(){ var r=document.createRange(); r.selectNodeContents(m); var s=window.getSelection(); s.removeAllRanges(); s.addRange(r); }
+    try{ navigator.clipboard.writeText(m.textContent).then(done,fallback); }catch(e){ fallback(); }
+  });
+  var z=document.getElementById('zoom'), zi=document.getElementById('zoom-img'), zc=document.getElementById('zoom-cap');
+  Array.prototype.forEach.call(document.querySelectorAll('.map-btn'),function(bt){
+    bt.addEventListener('click',function(){
+      zi.src=bt.getAttribute('data-full'); zi.alt=bt.getAttribute('data-cap'); zc.textContent=bt.getAttribute('data-cap');
+      if(z.showModal) z.showModal(); else z.setAttribute('open','');
+    });
+  });
+  function shut(){ if(z.close) z.close(); else z.removeAttribute('open'); }
+  document.getElementById('zoom-close').addEventListener('click',shut);
+  z.addEventListener('click',function(e){ if(e.target===z) shut(); });
+})();
+</script>
+
+</body>
+</html>
